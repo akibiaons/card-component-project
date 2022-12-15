@@ -1,0 +1,281 @@
+:root {
+    --clr-accent-100: #f2eae2; /*Cream background color*/
+    --clr-accent-200: #FFFFFF; /*White Background near image in product card*/
+
+    --clr-txtprimary-100: #6C7289;      /*main conent color*/
+    --clr-txtsecondary-200: #1C232B;    /*Color of product name, stands out compared to the txtprimary*/
+    --clr-txttridary-300: #3D8168;      /*Color of call to action purchase buttons which will be green to encourage pressing*/
+
+    --ff-primary: 'Montserrat', sans-serif;
+    --ff-secondary: 'Fraunces', serif;
+
+    --fs-100: .75rem;   /*For the item sections part at the top of the card*/
+    --fs-200: 0.875rem; /*For the add to cart, and item description part of the card*/
+    --fs-300: 2rem;     /*Big font size to make the price and name of the item pop out to web users*/
+    --fs-400: 0.813;    /*For the crossed out price showing we have discounts*/
+}
+/*=========================================================================================*/
+/*CSS Styling Reset*/
+
+/* Box sizing rules we keep the same after css reset import */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin we delete all the text element tags and just put a star*/
+* { /*We also just add 0 margin, padding, and a inherit font*/
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* Set core body defaults */
+body {
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    background-color: var(--clr-accent-100);
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/*Below is the CSS for the navigation bar which is taken from WDS Hub*/
+.primary-header {
+  padding-top: 1.2rem;
+}
+
+/*Next we will add tab heading styles*/
+.tab-heading {
+  text-align: center;
+  overflow: hidden;
+}
+
+.tab-heading p {
+  font-size: var(--fs-700);
+}
+
+.tab-heading button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  padding: 0px 0px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+/*End of tab-header*/
+/* Style the tab */
+
+.tab {
+  overflow: hidden;
+}
+
+.tab a {
+  text-decoration: none;
+  color: var(--clr-txttridary-300);
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  text-align: center;
+  border: none;
+  outline: none;
+  padding: 11px 11px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+/*Navigation on desktop*/
+@media (min-width: 48em) {
+  .tab-heading {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 6rem;
+  }
+  
+  .tab-heading p {
+    font-size: var(--fs-700);
+  }
+  
+  .tab-heading button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    padding: 0px 0px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+  
+  .tab a {
+    padding-right: 1rem;
+    text-decoration: none;
+    color: var(--clr-txttridary-300);
+    font-size: var(--fs-600);
+  }
+
+  .tab a:hover {
+    cursor: pointer;
+  }
+
+  .tab button {
+    background-color: inherit;
+    text-align: center;
+    border: none;
+    outline: none;
+    padding: 10px 10px;
+    transition: 0.3s;
+    font-size: 17px;
+  }
+
+  .tab button.active {
+    background-color: #ccc;
+  }
+
+  .tab button.active {
+    background-color: #ccc;
+  }
+
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+
+}
+
+/*The CSS below is styling for the product description grid that shows up besides the image*/
+.grid {
+  display: grid;
+  grid-template-columns: 90%;
+  grid-template-rows: 50%;
+  justify-content: center;
+}
+
+.product-grid div {
+  padding-top: 2rem;
+  padding-left: .2rem;
+}
+
+.item-name,
+.item-description,
+.item-price,
+.pre-item-price,
+.button {
+  padding: none;
+  text-align: left;
+}
+
+.product-description {
+  background-color: var(--clr-accent-200);
+  border-radius: 0rem 0rem 1rem 1rem;
+}
+
+.product-img img {
+  border-radius: 1rem 1rem 0rem 0rem;
+}
+
+/*Below is the css for laptops and larger screens*/
+@media (min-width: 48em) {
+  .grid { 
+    display: grid;
+  }
+}
+/*End of mobile CSS media query for product description grid*/
+
+/*Utility classes, MUST BE KEPT AT THE BOTTOM*/
+.primary-item-txt {
+    font-family: var(--ff-primary);
+    color: var(--clr-txtprimary-100);
+    font-size: var(--fs-100);
+    letter-spacing: 0.3125rem;
+}
+
+.price-txt {
+    font-family: var(--ff-primary);
+    color: var(--clr-txtprimary-100);
+    font-size: var(--fs-400);
+}
+
+.primary-text {
+    font-family: var(--ff-primary);
+    color: var(--clr-txtprimary-100);
+    font-size: var(--fs-200);
+}
+
+.secondary-text {
+    font-family: var(--ff-secondary);
+    color: var(--clr-txtsecondary-200);
+    font-size: var(--fs-300);
+}
+
+.trimary-text {
+    font-family: var(--ff-secondary);
+    color: var(--clr-txttridary-300);
+    font-size: var(--fs-300);
+}
+
+.pre-item-price {
+  font-family: var(--ff-primary);
+  color: var(--clr-txtprimary-100);
+  font-size: var(--fs-400);
+}
