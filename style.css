@@ -234,6 +234,14 @@ svg {
   border-radius: 1rem 1rem 0rem 0rem;
 }
 
+.button {
+  background-color: var(--clr-txttridary-300);
+}
+
+.button p {
+  color: var(--clr-accent-200);
+}
+
 /*Below is the css for laptops and larger screens*/
 @media (min-width: 48em) {
   .grid { 
