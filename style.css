@@ -235,7 +235,13 @@ svg {
   border-radius: 1rem 1rem 0rem 0rem;
 }
 
+.add-to-cart {
+  display: grid;
+  justify-content: center;
+}
+
 .button {
+  align-items: center;
   padding: 1rem;
   display: flex;
   background-color: var(--clr-txttridary-300);
@@ -249,8 +255,7 @@ svg {
 
 .button p {
   font-size: var(--fs-200);
-  padding-left: 1.5rem;
-  margin-left: 1rem;
+  margin-left: .5rem;
   color: var(--clr-accent-200);
 }
 
