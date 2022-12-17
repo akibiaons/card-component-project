@@ -212,7 +212,7 @@ svg {
 }
 
 .product-grid div {
-  padding-top: 2rem;
+  padding-top: .2rem;
   padding-left: .2rem;
 }
 
@@ -221,13 +221,13 @@ svg {
 .item-price,
 .pre-item-price,
 .button {
-  padding: none;
   text-align: left;
 }
 
 .product-description {
   background-color: var(--clr-accent-200);
   border-radius: 0rem 0rem 1rem 1rem;
+  margin-bottom: 10rem;
 }
 
 .product-img img {
