@@ -263,7 +263,24 @@ svg {
 @media (min-width: 48em) {
   .grid { 
     display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;  
   }
+
+  .product-img img {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .product-description {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 4;
+  }
+
 }
 /*End of mobile CSS media query for product description grid*/
 
