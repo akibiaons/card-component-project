@@ -263,7 +263,7 @@ svg {
 @media (min-width: 48em) {
   .grid {
     display: grid;
-    width: 100%;
+    width: 80%;
     grid-template: 1fr / 1fr;
   }
 
