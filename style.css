@@ -264,14 +264,17 @@ svg {
   .grid {
     display: grid;
     width: 100%;
-    grid-template: 1fr 1fr / 1fr 1fr;
+    grid-template: 1fr / 1fr;
   }
+
   .product-img {
     grid-area: 1 / 1 / 2 / 2;
+    align-items: center;
   }
 
   .product-description {
     grid-area: 1 / 2 / 2 / 2;
+    align-items: center;
   }
 }
 /*End of mobile CSS media query for product description grid*/
