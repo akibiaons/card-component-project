@@ -205,77 +205,24 @@ svg {
 }
 
 /*The CSS below is styling for the product description grid that shows up besides the image*/
-.grid {
+.grid-container {
   display: grid;
-  grid-template-columns: 90%;
-  grid-template-rows: 50%;
+  margin: 3rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
   justify-content: center;
-}
-
-.product-grid div {
-  padding-top: .2rem;
-  padding-left: .2rem;
-}
-
-.item-name,
-.item-description,
-.item-price,
-.pre-item-price,
-.button {
-  text-align: left;
-}
-
-.product-description {
+  align-items: center;
   background-color: var(--clr-accent-200);
-  border-radius: 0rem 0rem 1rem 1rem;
-  margin-bottom: 10rem;
+  border-radius: 1.2rem 1.2rem 1.2rem 1.2rem;
 }
 
 .product-img img {
-  border-radius: 1rem 1rem 0rem 0rem;
-}
-
-.add-to-cart {
-  display: grid;
-  justify-content: center;
-}
-
-.button {
-  align-items: center;
-  padding: 1rem;
-  display: flex;
-  background-color: var(--clr-txttridary-300);
-  border-radius: .5rem;
-}
-
-.button:hover {
-  cursor: pointer;
-  background-color: var(--clr-accent-300);
-}
-
-.button p {
-  font-size: var(--fs-200);
-  margin-left: .5rem;
-  color: var(--clr-accent-200);
+  border-radius: 1.2rem 1.2rem 0rem 0rem;
 }
 
 /*Below is the css for laptops and larger screens*/
 @media (min-width: 48em) {
-  .grid {
-    display: grid;
-    width: 80%;
-    grid-template: 1fr / 1fr;
-  }
 
-  .product-img {
-    grid-area: 1 / 1 / 2 / 2;
-    align-items: center;
-  }
-
-  .product-description {
-    grid-area: 1 / 2 / 2 / 2;
-    align-items: center;
-  }
 }
 /*End of mobile CSS media query for product description grid*/
 
