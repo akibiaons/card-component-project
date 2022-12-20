@@ -207,7 +207,8 @@ svg {
 /*The CSS below is styling for the product description grid that shows up besides the image*/
 .grid-container {
   display: grid;
-  margin: 3rem;
+  margin: 1.2rem;
+  padding: 1.2rem;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   justify-content: center;
@@ -219,6 +220,20 @@ svg {
 .product-img img {
   border-radius: 1.2rem 1.2rem 0rem 0rem;
 }
+
+.primary-item-txt {
+
+}
+
+.item-name {
+
+}
+
+.item-description {
+
+}
+
+
 
 /*Below is the css for laptops and larger screens*/
 @media (min-width: 48em) {
@@ -262,4 +277,14 @@ svg {
   font-family: var(--ff-primary);
   color: var(--clr-txtprimary-100);
   font-size: var(--fs-400);
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--clr-txttridary-300);
+  color: var(--clr-accent-200);
+  font-weight: bold;
 }
