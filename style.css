@@ -225,30 +225,43 @@ svg {
   border-radius: 1.2rem 1.2rem 0rem 0rem;
 }
 
-.primary-item-txt {
-
-}
-
-.item-name {
-
-}
-
-.item-description {
-
-}
-
-.item-price {
-
-}
-
 .markdown {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.pre-item-price {
+  margin-right: 5rem;
 }
 
 /*Below is the css for laptops and larger screens*/
 @media (min-width: 48em) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: var(--clr-accent-200);
+  }
+
+  .product-img {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+
+  .primary-item-txt {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  .item {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
 
 }
 /*End of mobile CSS media query for product description grid*/
