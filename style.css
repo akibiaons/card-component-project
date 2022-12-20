@@ -217,6 +217,10 @@ svg {
   border-radius: 1.2rem 1.2rem 1.2rem 1.2rem;
 }
 
+.item {
+  padding-top: .4rem;
+}
+
 .product-img img {
   border-radius: 1.2rem 1.2rem 0rem 0rem;
 }
@@ -233,13 +237,22 @@ svg {
 
 }
 
+.item-price {
 
+}
+
+.markdown {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 
 /*Below is the css for laptops and larger screens*/
 @media (min-width: 48em) {
 
 }
 /*End of mobile CSS media query for product description grid*/
+
 
 /*Utility classes, MUST BE KEPT AT THE BOTTOM*/
 .primary-item-txt {
@@ -274,11 +287,12 @@ svg {
 }
 
 .pre-item-price {
-  font-family: var(--ff-primary);
-  color: var(--clr-txtprimary-100);
-  font-size: var(--fs-400);
+  font-family: var(--ff-primary); !important
+  color: var(--clr-txtprimary-100); !important
+  font-size: var(--fs-400); !important
 }
 
+/*Below is the button classes for the product items*/
 .button {
   display: flex;
   justify-content: center;
@@ -287,4 +301,12 @@ svg {
   background-color: var(--clr-txttridary-300);
   color: var(--clr-accent-200);
   font-weight: bold;
+  padding: 1rem;
+  border-radius: 1rem;
 }
+
+.button:hover {
+  cursor: pointer;
+  background-color: var(--clr-accent-300);
+}
+/*Above Above is the button classes for the product items*/
