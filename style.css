@@ -207,30 +207,37 @@ svg {
 /*The CSS below is styling for the product description grid that shows up besides the image*/
 .product-card {
   display: grid;
-  margin: 1.2rem;
-  padding: 1.2rem;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  justify-content: center;
+  grid-template-columns: 1fr; /* 1fr for the image and 2fr for the product description */ 
   align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.product-description {
+  width: 100%;
+  height: auto;
   background-color: var(--clr-accent-200);
-  border-radius: 1.2rem 1.2rem 1.2rem 1.2rem;
+  padding: 1.25rem;
 }
 
 /*Below is the css for laptops and larger screens*/
 @media (min-width: 48em) {
   .product-card {
     display: grid;
-    grid-template-columns: 1fr 2fr; /* 1fr for the image and 2fr for the product description */
+    align-items: stretch;
+    grid-template-columns: 1fr 1fr; /* 1fr for the image and 2fr for the product description */
     padding: 10.25rem;
   }
 
   img {
     width: 100%;
     height: auto;
-    align-items: center;
-    justify-content: center;
-  }
+    }
 
   .product-description {
     width: 100%;
