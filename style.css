@@ -205,7 +205,7 @@ svg {
 }
 
 /*The CSS below is styling for the product description grid that shows up besides the image*/
-.grid-container {
+.product-card {
   display: grid;
   margin: 1.2rem;
   padding: 1.2rem;
@@ -215,24 +215,6 @@ svg {
   align-items: center;
   background-color: var(--clr-accent-200);
   border-radius: 1.2rem 1.2rem 1.2rem 1.2rem;
-}
-
-.item {
-  padding-top: .4rem;
-}
-
-.product-img img {
-  border-radius: 1.2rem 1.2rem 0rem 0rem;
-}
-
-.markdown {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.pre-item-price {
-  margin-right: 5rem;
 }
 
 /*Below is the css for laptops and larger screens*/
@@ -256,8 +238,6 @@ svg {
     background-color: var(--clr-accent-200);
     padding: 1.25rem;
   }
-
-
 }
 /*End of mobile CSS media query for product description grid*/
 
