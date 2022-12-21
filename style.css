@@ -237,31 +237,26 @@ svg {
 
 /*Below is the css for laptops and larger screens*/
 @media (min-width: 48em) {
-  .grid-container {
+  .product-card {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr; /* 1fr for the image and 2fr for the product description */
+    padding: 10.25rem;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .product-description {
+    width: 100%;
+    height: auto;
     background-color: var(--clr-accent-200);
+    padding: 1.25rem;
   }
 
-  .product-img {
-    grid-row-start: 1;
-    grid-row-end: 2;
-    grid-column-start: 1;
-    grid-column-end: 1;
-  }
-
-  .primary-item-txt {
-    grid-row-start: 1;
-    grid-column-start: 2;
-    grid-column-end: 3;
-  }
-
-  .item {
-    grid-row-start: 1;
-    grid-column-start: 2;
-    grid-column-end: 3;
-  }
 
 }
 /*End of mobile CSS media query for product description grid*/
