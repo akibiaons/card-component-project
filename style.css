@@ -295,9 +295,9 @@ svg {
 }
 
 .pre-item-price {
-  font-family: var(--ff-primary); !important
-  color: var(--clr-txtprimary-100); !important
-  font-size: var(--fs-400); !important
+  font-family: var(--ff-primary) !important;
+  color: var(--clr-txtprimary-100) !important;
+  font-size: var(--fs-400) !important;
 }
 
 /*Below is the button classes for the product items*/
